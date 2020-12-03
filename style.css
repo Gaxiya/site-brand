@@ -1,15 +1,29 @@
+@font-face{
+    font-family: "Font Awesome";
+    src: url(fonts/fa-regular-400.ttf);
+}
 *{box-sizing: border-box;
 
 }
 body{
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 .content{
     display: grid;
-    margin-left:230px;
-    margin-right: 230px; 
+    
     grid-template-columns:repeat(12,68px);
     grid-column-gap:30px;
+    grid-template-rows: [header]100px [navbar]51px [slider]665px 98px [category]823px 100px [product]982px 113px [feature]529px 97px [subsribe-copy]438px 109px [footer]428px ;
     justify-content: center;
     grid-auto-flow: column;
+
+
+}
+
+.wrap{
+    width: 1140px;
+    margin: 0 auto;
+    outline: 1px solid red ;
 }
