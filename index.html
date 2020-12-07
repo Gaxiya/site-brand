@@ -68,13 +68,14 @@
             </ol>
         </nav>
         <main >
+            
+            <div class="slider" >
+               
+            </div>
             <div class="sliderCont">
                 <img src="img/border_slider.png" alt="">
                 <h1>THE BRAND</h1>
                 <h3>OF LUXERIOUS<span>FASHION</span></h3>
-            </div>
-            <div class="slider" id="bg1">
-               
             </div>
             <div class="category">
                 <div class="banner1">
@@ -162,8 +163,28 @@
                     <h6>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</h6>
                 </aside>
             </div>
-            <div class="slider-copy">
-                
+            <div class="slider-copy slider">
+               
+            </div>
+            <div class="group17">
+                <img src="img/ellipse_3_2206.png" alt="">
+                <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, 
+                    a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                <h6> Bin Burhan <br><span>Dhaka, Bd</span></h6>
+                <div class="buttons">
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
+            </div>
+            <div class="group6">
+                <img src="img/shape_6_2197.png" >
+                <h2>Subscribe <br>
+                   <span>FOR OUR NEWLETTER AND PROMOTION</span></h2>
+                <form >
+                    <input type="email" name="slidEmail" id="sliderEmail" placeholder="Enter Your Email">
+                    <input type="submit" value="Subscribe" placeholder="Subscribe">
+                </form>
             </div>
         </main>
     </div>
@@ -192,7 +213,8 @@
         if(pageWidth>1600){
             margl=margl-(pageWidth-1600);
             margr=margr-(pageWidth-1600);
-            $(".slider").width(pageWidth+(pageWidth-1600)*2);
+            $(".slider").width(pageWidth+(pageWidth-1600)/2);
+
         }
         else
             {margl=margl+(pageWidth-1600)/2;

@@ -14,7 +14,7 @@ body {
   grid-column-gap: 30px;
   width: 1146px;
   margin: 0 auto;
-  grid-template-rows: [header] 100px [navbar] 51px [slider] 665px 98px [category] 823px 100px [product] 982px 113px [feature] 529px 97px [subsribe-copy] 438px 109px [footer] 428px;
+  grid-template-rows: [header] 100px [navbar] 51px [slider] 665px 98px [category] 823px 100px [product] 982px 113px [feature] 529px 97px [subsrib] 438px 109px [footer] 428px;
   justify-content: center;
 }
 header {
@@ -236,22 +236,19 @@ main {
   grid-column: 1 / span 12;
   grid-row-start: slider;
   grid-row-end: subsribe-copy;
-  grid-template-rows: [slider] 665px 98px [category] 823px 100px [product] 982px 113px [feature] 529px 97px [subsribe-copy] 438px;
+  grid-template-rows: [slider] 665px 98px [category] 823px 100px [product] 982px 113px [feature] 529px 97px [subsrib] 438px ;
 }
 main .slider {
   grid-row: slider ;
   grid-column: 1 / span 12;
   background-image: url(img/slider_index.png);
   height: 665px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top bottom;
+  background-size: contain;
+  background-position: center ;
 }
 main .sliderCont {
   grid-row: slider ;
-  position: absolute;
-  left: 254px;
-  margin-top: 224px;
+  grid-column: 1 / span 6;
 }
 main .sliderCont img {
   position: relative;
@@ -748,6 +745,147 @@ main .feature aside h6 {
   margin-right: 22px;
 }
 main .slider-copy {
-  grid-row: slider-copy;
-  width: 100%;
+  grid-row: subsrib;
+  grid-column: 1 / span 12;
+  height: 438px;
+  background-image: url(img/rectangle_bk.png), url(img/rectangle_bk1.png);
+  background-repeat: no-repeat;
+}
+main .group17 {
+  display: grid;
+  grid-row: subsrib;
+  grid-column: 1 / span 6;
+  grid-template-columns: repeat(6, 68px);
+  grid-column-gap: 30px;
+  grid-template-rows: 123px 70px 19px 29px 55px 4px 156px;
+}
+main .group17 img {
+  grid-row: 2;
+  grid-column: 1;
+}
+main .group17 p {
+  margin: 0 0;
+  grid-row: 2;
+  grid-column: 2 / span 5;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.025em;
+  color: #222224;
+}
+main .group17 h6 {
+  margin: 0 0;
+  grid-row: 4;
+  grid-column: 2 / span 2;
+  /* Text styles for "Bin Burhan'" */
+  /* 
+            Text styles for "Bin Burhan'"
+             */
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #f16d7f;
+  /* Text styles for "Dhaka, Bd" */
+  /* 
+            Text styles for "Dhaka, Bd"
+             */
+  margin-left: 15px;
+}
+main .group17 h6 span {
+  position: relative;
+  top: 0px;
+  line-height: 14px;
+  font-weight: 300;
+  color: #222224;
+}
+main .group17 .buttons {
+  grid-column: 2 / span 3;
+  grid-row: 6;
+  border: none;
+}
+main .group17 .buttons button {
+  border: none;
+  margin-right: 8px;
+  width: 38px;
+  height: 4px;
+  background-color: #d6d6d6;
+}
+main .group17 .buttons button:focus {
+  background-color: #f16d7f;
+}
+main .group6 {
+  display: grid;
+  grid-row: subsrib;
+  grid-column: 7 / span 6;
+  grid-template-columns: repeat(6, 68px);
+  grid-column-gap: 30px;
+  grid-template-rows: 148px 41px 35px 46px 168px;
+}
+main .group6 h2 {
+  grid-column: 2 / span 4;
+  grid-row: 2;
+  margin-top: -20px;
+  position: relative;
+  top: -20px;
+  text-align: center;
+  margin: 0 0;
+  /* Text styles for "Subscribe'" */
+  /* 
+            Text styles for "Subscribe'"
+             */
+  font-family: Lato;
+  font-size: 24px;
+  line-height: 54px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #222224;
+  /* Text styles for " FOR OUR NEWLETTER AND PROMOTION" */
+  /* 
+            Text styles for " FOR OUR NEWLETTER AND PROMOTION"
+             */
+}
+main .group6 h2 span {
+  position: relative;
+  top: -25px;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: none;
+}
+main .group6 form {
+  grid-column: 2 / span 4;
+  grid-row: 4;
+  margin-left: 30px;
+}
+main .group6 form input[type=email] {
+  padding-left: 28px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width: 334px;
+  height: 46px;
+  background-color: #e1e1e1;
+  border-radius: 23px;
+  border: none;
+}
+main .group6 form input[type=email] input[type=email]::placeholder {
+  opacity: 0.67;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 54px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #222224;
+}
+main .group6 form input[type=submit] {
+  position: relative;
+  top: -46px;
+  left: 282px;
+  width: 104px;
+  height: 46px;
+  background-color: #f16d7f;
+  border-radius: 0px 23px 23px 0px;
+  border: none;
 }
