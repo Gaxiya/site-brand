@@ -12,14 +12,14 @@
 <body>
     <div class="content">
      
-        <header>
+        <header class="wraper">
             <div class="logo">
             <img src="img/brand_im.png" alt="">
             <h3>
                 BRAN <span>D</span> 
                 
             </h3></div>
-         <div class="search">
+         <div class="search" >
              <button class="drop"  >Browse <i class="fa fa-caret-down" ></i> </button>
              <ul class="dropDown">
                  <h3>WOMAN</h3>
@@ -56,7 +56,7 @@
                  </button></div>
          </div>
         </header>
-        <nav>
+        <nav class="wraper">
             <ol class="navbar " >
                 <li> <a href="#">Home</a>  </li>
                 <li> <a href="#">Man</a> </li>
@@ -69,15 +69,15 @@
         </nav>
         <main >
             
-            <div class="slider" >
+            <div class="slider stretching" >
                
             </div>
-            <div class="sliderCont">
+            <div class="sliderCont wraper" class="wraper">
                 <img src="img/border_slider.png" alt="">
                 <h1>THE BRAND</h1>
                 <h3>OF LUXERIOUS<span>FASHION</span></h3>
             </div>
-            <div class="category">
+            <div class="category wraper" class="wraper">
                 <div class="banner1">
                     <h1>
                         hOT dEAL  <span>FOR MEN</span> 
@@ -98,7 +98,7 @@
                     </h1>
                 </div>
             </div>
-            <div class="product">
+            <div class="product wraper" class="wraper">
                 <h1>Fetured Items</h1>
                 <p>Shop for items based on what we featured in this week</p>
                 <div class="products">
@@ -145,7 +145,7 @@
                 <button>Browse All Product <i class="fa fa-long-arrow-alt-right " aria-hidden="true">&#xf178</i></button>
                 
             </div>
-            <div class="feature">
+            <div class="feature wraper" class="wraper">
                 <div class="ofer">
                     <div>
                       30%  <span>OFFER </span> <span>FOR WOMEN</span>
@@ -163,10 +163,10 @@
                     <h6>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</h6>
                 </aside>
             </div>
-            <div class="slider-copy slider">
-               
-            </div>
-            <div class="group17">
+            <div class="slider-copy stretching">
+           
+        </div>
+            <div class="group17 wraper" class="wraper">
                 <img src="img/ellipse_3_2206.png" alt="">
                 <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, 
                     a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
@@ -177,7 +177,7 @@
                     <button></button>
                 </div>
             </div>
-            <div class="group6">
+            <div class="group6 wraper"class="wraper">
                 <img src="img/shape_6_2197.png" >
                 <h2>Subscribe <br>
                    <span>FOR OUR NEWLETTER AND PROMOTION</span></h2>
@@ -187,6 +187,78 @@
                 </form>
             </div>
         </main>
+        <footer>
+            <div class="footer-top wraper"> 
+                <div class="logo-footer">
+                    <img src="img/brand_im.png" alt="">
+                    <h3>
+                        BRAN <span>D</span> 
+                        
+                    </h3></div>
+                   <div class="text-footer"><p>Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. 
+                                             </p>
+                                            <h6>Efficiently plagiarize 24/365 action items and focused infomediaries.
+                                                Distinctively seize superior initiatives for wireless technologies. Dynamically optimize
+                                            </h6>
+                    </div> 
+                   
+                    <div class="company">
+                        <h3>COMPANY</h3>
+                        <div class="links-footer">
+                            <a href="#">Home</a>
+                            <br>
+                            <a href="#">Shop</a>
+                            <br>
+                            <a href="#">About</a>
+                            <br>
+                            <a href="#">How It Works</a>
+                            <br>
+                            <a href="#">Contact</a>
+                        </div>
+                       
+                    </div>
+                    <div class="information">
+                        <h3>INFORMATION</h3>
+                        <div class="links-footer">
+                            <a href="#">Tearms & Condition</a>
+                            <a href="#">Privacy Policy</a>
+                            <br>
+                            <a href="#">How to Buy</a>
+                            <br>
+                            <a href="#">How to Sell</a>
+                            <a href="#"> Promotion</a>
+                        </div>
+                    </div>
+                    <div class="shop-category">
+                        <h3>SHOP CATEGORY</h3>
+                        <div class="links-footer">
+                            <a href="#">Men</a>
+                            <br>
+                            <a href="#">Women</a>
+                            <br>
+                            <a href="#">Child</a>
+                            <br>
+                            <a href="#">Apparel</a>
+                            <br>
+                            <a href="#">Brows All</a>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="footer-bot wraper">
+                <p>© 2017  Brand  All Rights Reserved.</p>
+                <div class="socialLinks-footer">
+                    <button><i class="fab fa-facebook-f"></i></button>
+                    <button><i class="fab fa-twitter"></i></button>
+                    <button><i class="fab fa-linkedin-in"></i></button>
+                    <button><i class="fab fa-pinterest-p"></i></button>
+                    <button><i class="fab fa-google-plus-g"></i></button>
+                </div>
+            </div>
+            <div class="footer-back stretching">
+
+            </div>
+        </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous">
     </script>
@@ -209,25 +281,12 @@
     $('document').ready(function(){
         var pageWidth =$("body").width();
         var margl=-230;
-        var margr=-230;
-        if(pageWidth>1600){
-            margl=margl-(pageWidth-1600);
-            margr=margr-(pageWidth-1600);
-            $(".slider").width(pageWidth+(pageWidth-1600)/2);
-
-        }
-        else
-            {margl=margl+(pageWidth-1600)/2;
-                margr=margr+(pageWidth-1600)/2;
-                $(".slider").width(pageWidth-(pageWidth-1600)*2);}
+        var wraperW=12*68+11*30;
+        margl=(pageWidth-wraperW)/2;
+        $(".wraper").css({"margin-left":margl,"margin-right":margl});
         
-            $(".slider").css({ 'margin-left': margl,
-            'margin-right': margr
-            
-            });
-          if(pageWidth==1600)
-          {  $(".slider").width(pageWidth-(pageWidth-1600)*2);}
-
+        
+        $(".stretching").css({"min-width":pageWidth});
        })
    
 });
