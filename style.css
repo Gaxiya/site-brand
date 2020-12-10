@@ -80,6 +80,7 @@ nav ol {
 }
 nav li:hover {
   border-bottom: 3.4px solid #ef5b70;
+  padding-bottom: 7.6px;
 }
 nav li {
   display: flex;
