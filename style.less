@@ -17,6 +17,7 @@
   }
   body {
     margin: 0 ;
+    overflow-x: hidden;
     
   }
   .content {
@@ -280,7 +281,7 @@ main{
         grid-row:slider ;
         grid-column: 1/ span 12;
         background-image: url(img/slider_index.png);
-        height: 665px;
+        height: 625px;
         
         background-origin: content-box;
         background-size: 100%;
@@ -785,9 +786,16 @@ color: #222222;
         
         }
     }
-    
-    .group17{display: grid;
+    .group{display: grid;
         grid-row:subsrib;
+        grid-column:1/ span 12;
+        grid-template-columns: repeat(12,@column);
+        grid-column-gap: @gap;
+        grid-auto-flow: column;
+       grid-template-rows: 438px;
+    }
+    .group17{display: grid;
+        
         grid-column:1/ span 6;
         grid-template-columns: repeat(6,@column);
         grid-column-gap: @gap;
@@ -849,9 +857,11 @@ color: #222222;
             button:focus{background-color: #f16d7f; }
         }
     }
+    
     .group6{
         display: grid;
-        grid-row:subsrib;
+        
+        
         grid-column:7/ span 6;
         grid-template-columns: repeat(6,@column);
         grid-column-gap: @gap;

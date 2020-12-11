@@ -11,6 +11,7 @@
 }
 body {
   margin: 0 ;
+  overflow-x: hidden;
 }
 .content {
   display: grid;
@@ -252,7 +253,7 @@ main .slider {
   grid-row: slider ;
   grid-column: 1 / span 12;
   background-image: url(img/slider_index.png);
-  height: 665px;
+  height: 625px;
   background-origin: content-box;
   background-size: 100%;
 }
@@ -754,9 +755,17 @@ main .feature aside h6 {
   color: #fbfbfb;
   margin-right: 22px;
 }
-main .group17 {
+main .group {
   display: grid;
   grid-row: subsrib;
+  grid-column: 1 / span 12;
+  grid-template-columns: repeat(12, 68px);
+  grid-column-gap: 30px;
+  grid-auto-flow: column;
+  grid-template-rows: 438px;
+}
+main .group17 {
+  display: grid;
   grid-column: 1 / span 6;
   grid-template-columns: repeat(6, 68px);
   grid-column-gap: 30px;
@@ -821,7 +830,6 @@ main .group17 .buttons button:focus {
 }
 main .group6 {
   display: grid;
-  grid-row: subsrib;
   grid-column: 7 / span 6;
   grid-template-columns: repeat(6, 68px);
   grid-column-gap: 30px;
