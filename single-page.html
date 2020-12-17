@@ -99,8 +99,17 @@
                     <h3>QUANTITY</h3>
                 </div>
                 <div class="choose-buttons">
-                    <button><img src="img/rectangle-30.png" alt=""><span>RED</span><i class="fas  fa-angle-down"></i></button>
-                    <button><span>XXL</span><i class="fas fa-angle-down"></i></button>
+                    
+                    <button class="collor"><img src="img/rectangle-30.png" alt=""><span>RED</span><i class="fas  fa-angle-down"></i></button>
+                    <ol class="color-choose">
+                        <li id="red"> <img src="img/rectangle-30.png" alt=""> <span>RED</span></li>
+                        <li id="green"> <img src="img/rectangle-30.png" alt=""> <span>GREEN</span></li>
+                    </ol>
+                    <button class="sizeof"><span>XXL</span><i class="fas fa-angle-down"></i></button>
+                    <ol class="size-choose">
+                        <li id="XXL"><span>XXL</span></li>
+                        <li  id="XL"><span>XL</span></li>
+                    </ol>
                     <form >
                         <input type="text"  id="" placeholder="2">
                     </form>
@@ -236,61 +245,109 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.js" integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM=" crossorigin="anonymous">
     </script>
-    <script>
+   <script>
         
-        $(function()
-        {
-    $(".drop").click(function(){ 
-       $(".dropDown").css({"display":"block"});});
-    $(".dropDown").mouseleave(function(){ 
-       $(".dropDown").css({"display":"none"}); });
-    $(".dropDown").click(function(){ 
-       $(".dropDown").css({"display":"none"}); });
-      
-       $("#p1").click(function()
-       { dp("#p1");
-           });
-           $("#p2").click(function()
-       { dp("#p2");
-           });
-           $("#p3").click(function()
-       { dp("#p3");
-           });
-        function dp(k){
-            var c = k+"-1";
-            
-            $(function(){
-                
-            $(c).css({"display":"block"});
-            $(k+">h3").css({"color":"rgb(239, 91, 112)"})
-       $(k+"> i").css({"color":"rgb(239, 91, 112)","transform":"rotate(180deg)","align-self":"end"});
-            
+    $(function()
+    {
+        $(".shipDrop").click(function(){
+            $(".shipDown").css({"opacity":"1"});
         })
-    }
-       $(".dropdownP").click(function(){ 
-       $(".dropdownP").css({"display":"none"});
-       $(".dropP>h3").css({"color":"rgb(111, 110, 110)"})
-       $(".dropP> i").css({"color":"rgb(111, 110, 110)","transform":"rotate(0deg)","align-self":"center"});
-            });
+         $(".shipDown").click(function(){
+            $(".shipDown").css({"opacity":"0"});
+        })
+        $("#ship1").click(function(){
+            var oldText = $('#ship1').text();
+            var angle="<i class='fa fa-caret-down'></i>"
+            $(".shipDrop").html( oldText+angle);
+        })
+        $("#ship2").click(function(){
+            var oldText = $('#ship2').text();
+            var angle="<i class='fa fa-caret-down'></i>"
+            $(".shipDrop").html( oldText+angle);
+        })
+        $(".collor").click(function(){
+            $(".color-choose").css({"opacity":"1"});
+        })
+        $(".color-choose").click(function(){
+            $(".color-choose").css({"opacity":"0"});
 
-    $('document').ready(function(){
-        var pageWidth =$("body").width();
-        var margl=-230;
-        var wraperW=12*68+11*30;
-        margl=(pageWidth-wraperW)/2;
-        $(".wraper").css({"margin-left":margl,"margin-right":margl});
+        })
+        $("#red").click(function(){
+         var text=$('#red>span').text();
+         $(".collor>span").html(text);  
+        })
+
+        $("#green").click(function(){
+              var text=$('#green>span').text();
+             $(".collor>span").html(text);  
+        })
+        $(".sizeof").click(function(){
+            $(".size-choose").css({"opacity":"1"});
+        })
+        $(".size-choose").click(function(){
+            $(".size-choose").css({"opacity":"0"});
+
+        })
+        $("#XXL").click(function(){
+         var text=$('#XXL>span').text();
+         $(".sizeof>span").html(text);  
+        })
+
+        $("#XL").click(function(){
+              var text=$('#XL>span').text();
+             $(".sizeof>span").html(text);  
+        })
+$(".drop").click(function(){ 
+   $(".dropDown").css({"display":"block"});});
+$(".dropDown").mouseleave(function(){ 
+   $(".dropDown").css({"display":"none"}); });
+$(".dropDown").click(function(){ 
+   $(".dropDown").css({"display":"none"}); });
+  
+   $("#p1").click(function()
+   { dp("#p1");
+       });
+       $("#p2").click(function()
+   { dp("#p2");
+       });
+       $("#p3").click(function()
+   { dp("#p3");
+       });
+    function dp(k){
+        var c = k+"-1";
         
-       
-     
-        $(".stretching").css({"min-width":pageWidth});
-       })
+        $(function(){
+            
+        $(c).css({"display":"block"});
+        $(k+">h3").css({"color":"rgb(239, 91, 112)"})
+   $(k+"> i").css({"color":"rgb(239, 91, 112)","transform":"rotate(180deg)","align-self":"end"});
+        
+    })
+}
+   $(".dropdownP").click(function(){ 
+   $(".dropdownP").css({"display":"none"});
+   $(".dropP>h3").css({"color":"rgb(111, 110, 110)"})
+   $(".dropP> i").css({"color":"rgb(111, 110, 110)","transform":"rotate(0deg)","align-self":"center"});
+        });
+
+$('document').ready(function(){
+    var pageWidth =$("body").width();
+    var margl=-230;
+    var wraperW=12*68+11*30;
+    margl=(pageWidth-wraperW)/2;
+    $(".wraper").css({"margin-left":margl,"margin-right":margl});
+    
    
+ 
+    $(".stretching").css({"min-width":pageWidth});
+   })
+
 });
 
 
 
 
 
-    </script>
+</script> 
 </body>
 </html>
