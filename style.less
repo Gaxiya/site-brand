@@ -2657,3 +2657,137 @@ color: #f16d7f;}
     }
 }
 }
+.content-checkout{
+    display: grid; 
+    grid-template-rows: [header] 100px [navbar] 51px [breadcrumb] 148px 89px [products] 1022px    [subsrib] 438px 109px [footer] 498px;
+    
+    justify-content: center;
+
+}
+.main-checkout{
+    display: grid;
+    grid-template-columns: repeat(12,@column);
+        grid-column-gap: @gap;
+    grid-template-rows:[breadcrumb] 148px  89px[products] 1022px [subsrib] 438px  ;
+    grid-row: breadcrumb/products;
+    .breadcrumb{display: grid;
+        grid-column: 1/span 12;
+        z-index: 2;
+        grid-row: breadcrumb;
+        align-content: center;
+        grid-auto-flow: column;
+       
+        h3{
+            margin: 0 0;
+            font-family: Lato;
+            font-size: 24px;
+            line-height: 20px;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #f16d7f;
+        }
+        p{  justify-self: end;
+            margin: 0 0;
+            /* Text styles for "Home / Men / " */
+/* 
+Text styles for "Home / Men / "
+ */
+font-family: Lato;
+font-size: 14px;
+line-height: 20px;
+font-weight: 300;
+text-transform: uppercase;
+color: #636363;
+/* Text styles for "New Arrivals " */
+/* 
+Text styles for "New Arrivals "
+ */span:hover{font-weight: 700;
+color: #f16d7f;}
+
+        }
+    }
+    .breadcrumb-back{
+        grid-column: 1/span 12;
+        grid-row: breadcrumb;
+        height: 148px;
+        background-color: #f8f3f4;
+        z-index: 0;
+    }
+
+    .regestr{display: grid;
+        grid-row: products;
+      
+        margin-top: 0;
+       hr{
+           grid-column: 1/span 12;
+           height: 1px;
+           background-color: #e8e8e8;
+       }
+        .ship{
+            display: grid;
+            grid-template-columns: repeat(12,@column);
+            grid-column-gap: @gap;
+            grid-column: 1/ span 12;
+           h1{  grid-column: 1/span 2;
+            font-family: Lato;
+            font-size: 16px;
+            line-height: 1.2;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #222222;
+           }
+           
+        }
+        .check{
+            grid-column: 1/span 4;
+            h2{
+                font-family: Lato;
+font-size: 13px;
+line-height: 1.2;
+font-weight: 700;
+text-transform: uppercase;
+color: #222222;
+            }
+            h3{
+                font-family: Lato;
+font-size: 13px;
+line-height: 20px;
+font-weight: 400;
+color: #b3b2b2;
+            }
+            label{
+                font-family: Lato;
+font-size: 12px;
+line-height: 1.2;
+font-weight: 700;
+text-transform: uppercase;
+color: #222222;
+            }
+            h4{
+                font-family: Lato;
+font-size: 13px;
+line-height: 1.2;
+font-weight: 700;
+text-transform: uppercase;
+color: #222222;
+            }
+            h5{
+                font-family: Lato;
+font-size: 13px;
+line-height: 20px;
+font-weight: 400;
+color: #b3b2b2;
+            }
+            #checks:checked {
+                #registrs{
+                    
+                }
+            }
+        }
+        .registr{
+            grid-column: 6/span 4;
+            
+        }
+    }
+    
+}

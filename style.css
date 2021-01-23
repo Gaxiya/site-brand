@@ -2596,3 +2596,130 @@ Text styles for "New Arrivals "
   text-transform: uppercase;
   color: #ffffff;
 }
+.content-checkout {
+  display: grid;
+  grid-template-rows: [header] 100px [navbar] 51px [breadcrumb] 148px 89px [products] 1022px    [subsrib] 438px 109px [footer] 498px;
+  justify-content: center;
+}
+.main-checkout {
+  display: grid;
+  grid-template-columns: repeat(12, 68px);
+  grid-column-gap: 30px;
+  grid-template-rows: [breadcrumb] 148px  89px[products] 1022px [subsrib] 438px  ;
+  grid-row: breadcrumb / products;
+}
+.main-checkout .breadcrumb {
+  display: grid;
+  grid-column: 1 / span 12;
+  z-index: 2;
+  grid-row: breadcrumb;
+  align-content: center;
+  grid-auto-flow: column;
+}
+.main-checkout .breadcrumb h3 {
+  margin: 0 0;
+  font-family: Lato;
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #f16d7f;
+}
+.main-checkout .breadcrumb p {
+  justify-self: end;
+  margin: 0 0;
+  /* Text styles for "Home / Men / " */
+  /* 
+Text styles for "Home / Men / "
+ */
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #636363;
+  /* Text styles for "New Arrivals " */
+  /* 
+Text styles for "New Arrivals "
+ */
+}
+.main-checkout .breadcrumb p span:hover {
+  font-weight: 700;
+  color: #f16d7f;
+}
+.main-checkout .breadcrumb-back {
+  grid-column: 1 / span 12;
+  grid-row: breadcrumb;
+  height: 148px;
+  background-color: #f8f3f4;
+  z-index: 0;
+}
+.main-checkout .regestr {
+  display: grid;
+  grid-row: products;
+  margin-top: 0;
+}
+.main-checkout .regestr hr {
+  grid-column: 1 / span 12;
+  height: 1px;
+  background-color: #e8e8e8;
+}
+.main-checkout .regestr .ship {
+  display: grid;
+  grid-template-columns: repeat(12, 68px);
+  grid-column-gap: 30px;
+  grid-column: 1 / span 12;
+}
+.main-checkout .regestr .ship h1 {
+  grid-column: 1 / span 2;
+  font-family: Lato;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+.main-checkout .regestr .check {
+  grid-column: 1 / span 4;
+}
+.main-checkout .regestr .check h2 {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+.main-checkout .regestr .check h3 {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #b3b2b2;
+}
+.main-checkout .regestr .check label {
+  font-family: Lato;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+.main-checkout .regestr .check h4 {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+.main-checkout .regestr .check h5 {
+  font-family: Lato;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #b3b2b2;
+}
+.main-checkout .regestr .registr {
+  grid-column: 6 / span 4;
+}
